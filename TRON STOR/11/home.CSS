@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.header {
+    
+ 
+ width: 100%;
+    padding: 15px 10%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.7s;
+}
+
+.navbar a:hover, .navbar a.homeh {
+    color: #00abf0;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+}
+
+.home-con h1 {
+    font-size: 3rem;
+}
+
+.btn-box a {
+    display: inline-block;
+    background: #ffcc00;
+    color: #222;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.btn-box a:hover {
+    background: #e6b800;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 120px;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cardf {
+    margin-top: 10px;
+}
+
+.payment {
+    display: inline-block;
+    background: #00abf0;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.payment:hover {
+    background: #0086c3;
+}
